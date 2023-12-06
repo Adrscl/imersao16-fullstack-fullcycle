@@ -6,7 +6,7 @@ Desenvolvimento de um sistema de investimentos que inclui um home broker que per
 
 ## Tecnologias utilizadas
  - Docker
- - Go
+ - GoLang
  - Next.js
  - Nest.js
  - Apache Kafka
