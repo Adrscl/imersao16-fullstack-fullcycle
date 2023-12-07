@@ -27,10 +27,10 @@ func main() {
 	producer := kafka.NewKafkaProducer(configMap)
 	kafka := kafka.NewConsumer(configMap, []string{"input"})
 
-	go kafka.Consume(kafkaMsgChan)
+	go kafka.Consume(kafkaMsgChan) // T2
 
 	book := entity.NewBook(ordersIn, ordersOut, wg)
-	go book.Trade()
+	go book.Trade() // T3
 
 	go func() {
 		for msg := range kafkaMsgChan {
