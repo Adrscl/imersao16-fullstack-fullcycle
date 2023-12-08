@@ -1,8 +1,6 @@
 import { Body, Controller, Get, Param, Post } from '@nestjs/common';
 import { WalletAssetsService } from './wallet-assets.service';
 
-// /wallets/
-
 @Controller('wallets/:wallet_id/assets')
 export class WalletAssetsController {
   constructor(private walletAssetsService: WalletAssetsService) {}
