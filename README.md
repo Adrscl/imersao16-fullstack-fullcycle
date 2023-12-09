@@ -9,4 +9,3 @@ Desenvolvimento de um sistema de investimentos que inclui um home broker que per
  - GoLang
  - Nest.js
  - Next.js
- - 
