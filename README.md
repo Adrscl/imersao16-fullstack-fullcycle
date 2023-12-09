@@ -1,11 +1,12 @@
-# Projeto das aulas da Imersão 16 da Full Stack && Full Cycle
+# Projeto das aulas da "Imersão 16 Full Stack && Full Cycle" da Fullcycle
 
 ## Sobre
 Desenvolvimento de um sistema de investimentos que inclui um home broker que permite visualizar em tempo real todas as informações de ativos, ordens de compra e venda, gráficos e etc.
 
 ## Tecnologias utilizadas
+ - Apache Kafka
  - Docker
  - GoLang
- - Next.js
  - Nest.js
- - Apache Kafka
+ - Next.js
+ - 
