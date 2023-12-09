@@ -20,7 +20,7 @@ services:
       MONGODB_REPLICA_SET_MODE: primary
       MONGODB_REPLICA_SET_KEY: 123456
       MONGODB_DATABASE: nest
-
+  
 volumes:
   mongodb_data:
     driver: local

@@ -6,10 +6,10 @@ import (
 	"sync"
 
 	ckafka "github.com/confluentinc/confluent-kafka-go/kafka"
-	"github.com/devfullcycle/imersao13/go/internal/infra/kafka"
-	"github.com/devfullcycle/imersao13/go/internal/market/dto"
-	"github.com/devfullcycle/imersao13/go/internal/market/entity"
-	"github.com/devfullcycle/imersao13/go/internal/market/transformer"
+	"github.com/Adrscl/imersao-fullstack-fullcycle/go/internal/infra/kafka"
+	"github.com/Adrscl/imersao-fullstack-fullcycle/go/internal/market/dto"
+	"github.com/Adrscl/imersao-fullstack-fullcycle/go/internal/market/entity"
+	"github.com/Adrscl/imersao-fullstack-fullcycle/go/internal/market/transformer"
 )
 
 func main() {
@@ -27,10 +27,10 @@ func main() {
 	producer := kafka.NewKafkaProducer(configMap)
 	kafka := kafka.NewConsumer(configMap, []string{"input"})
 
-	go kafka.Consume(kafkaMsgChan) // T2
+	go kafka.Consume(kafkaMsgChan)
 
 	book := entity.NewBook(ordersIn, ordersOut, wg)
-	go book.Trade() // T3
+	go book.Trade()
 
 	go func() {
 		for msg := range kafkaMsgChan {
