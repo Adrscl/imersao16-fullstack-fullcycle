@@ -30,7 +30,7 @@
     "@nestjs/platform-express": "^9.0.0",
     "@prisma/client": "^4.15.0",
     "kafkajs": "^2.2.4",
-    "mongoose": "^7.3.1",
+    "mongoose": "^7.6.7",
     "nest-commander": "^3.10.0",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.2.0"
